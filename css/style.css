@@ -130,6 +130,11 @@ a {
 #nav .name {
 	padding-bottom: 5px;
 }
+
+#nav .name a{
+	color: #666666;
+}
+
 #nav span#first {
 	font-size: 1.6em;
 	font-weight: 400;
@@ -148,6 +153,7 @@ a {
 	color: #666666;
 	line-height: 1.8em;
 }
+
 #nav div#social img{
 	margin: 5px 5px 0px 0px ;
 }
