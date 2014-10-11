@@ -47,6 +47,18 @@ table {
 	border-spacing: 0;
 }
 
+/*--------------CSS PRELOADER--------------*/
+
+div#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #fff url('../images/preloader.GIF') no-repeat center center;
+}
 
 /*--------------CSS MAIN--------------*/
 html {
@@ -165,7 +177,7 @@ a {
 .item {
 	font-size: 0;
 	margin: 2px;
-	max-width: 280px;
+	max-width: 275px;
 }
 
 #photogrid img {

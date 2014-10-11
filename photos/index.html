@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Vikalp Gupta - Designer</title>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="../css/pure-min.css">
+		<!--[if lte IE 8]>
+    <link rel="stylesheet" href="./css/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../css/grids-responsive-min.css">
+<!--<![endif]-->
+		<link rel="stylesheet" href="../css/style.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+	
+	</head>
+
+	<body>
+
+		<div id="preloader">
+		</div>
+		<div id="nav">
+			<div class="name" >
+				<span id="first">VIKALP</span>
+				<span id="last">GUPTA</br></span>
+			</div>
+
+			<ul class="links">
+				<!--<li><a href="https://medium.com/@vkalpgupta/" >Thoughts</a></li>-->
+				<li><a href="../projects/" >Projects</a></li>
+				<li><a href="./" >Photography</a></li>
+			</ul>
+			<ul class="links">
+				<li><a href="../about/index.html">About Me</a></li>
+				<!-- <li><a href="http://x.vikalpgupta.com">Lane</a></li> -->
+			</ul>
+
+			<ul id="social">
+				<li><a href="https://twitter.com/vkalpgupta"><img href="../images/t.png"></a></li>
+				<li><a href="https://instagram.com/vikalp02"><img href="../images/i.png"></a></li>
+			</ul>
+		</div>
+
+		<section id="photos" class="pure-g">
+			<div class="pure-u-1-4" id="offset">&nbsp
+			</div>
+			<div class="mainsec pure-u-3-4" id="photogrid" >
+				<div class="item"><img src="./window.jpg" alt="window" ></div>
+				<div class="item"><img src="./bells.jpg" alt="bells" ></div>
+				<div class="item"><img src="./kalka.jpg" alt="kalka" ></div>
+				<div class="item"><img src="./lilly.jpg" alt="red-lillys" ></div>
+				<div class="item"><img src="./snow.jpg" alt="kufri-snow" ></div>
+				<div class="item"><img src="./chains.jpg" alt="bounded-in-chains" ></div>
+				<div class="item"><img src="./smoothie.jpg" alt="smooth" ></div>
+				<div class="item"><img src="./church.jpg" alt="church-shimla" ></div>
+				<div class="item"><img src="./blue.jpg" alt="kufri-mountains" ></div>
+				<div class="item"><img src="./mainbuildingiitr.jpg" alt="main-building-iitr" ></div>
+				<div class="item"><img src="./clouds.jpg" alt="clouds" ></div>
+				<div class="item"><img src="./senate.jpg" alt="senate-iitr.jpg" ></div>
+				<div class="item"><img src="./net.jpg" alt="net" ></div>
+				<div class="item"><img src="./durgapuja.jpg" alt="durgapuja" ></div>
+				<div class="item"><img src="./end.jpg" alt="end-of-a-lifetime" ></div>
+				<div class="item"><img src="./fire.jpg" alt="fire" ></div>
+				<div class="item"><img src="./friends.jpg" alt="friends" ></div>
+				<div class="item"><img src="./gears.jpg" alt="gears" ></div>
+				<div class="item"><img src="./morning.jpg" alt="morning" ></div>
+				<div class="item"><img src="./ride.jpg" alt="ride" ></div>
+				<div class="item"><img src="./evening.jpg" alt="evening" ></div>
+				<div class="item"><img src="./artist.jpg" alt="thinker" ></div>
+				<div class="item"><img src="./tracks.jpg" alt="tracks" ></div>
+				<div class="item"><img src="./kalka.jpg" alt="kalka" ></div>
+				<div class="item"><img src="./all-alone.jpg" alt="all-alone" ></div>
+			</div>
+
+		</section>
+
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {  
+
+			// site preloader -- also uncomment the div in the header and the css style for #preloader
+			$(window).load(function(){
+				$('#preloader').fadeOut('slow',function(){$(this).remove();});
+			});
+
+			});
+
+			function placeNav(){
+				var secLeft = $('.pure-u-1-4').css('width');
+				secLeft = Number(secLeft.substring(0,secLeft.length - 2))
+				var width = 76;
+				var avlbl = secLeft + 4 - width;
+				var gutter = avlbl * 0.25;
+				var navLeft = avlbl * .75;
+				console.log(secLeft, avlbl, gutter, navLeft)
+				$('#nav').css('left', navLeft + 'px')
+			}
+			placeNav()
+			$(window).resize(function(){
+				placeNav()
+			})
+			$(window).load(function(){
+				var $photogrid = $('#photogrid');
+				// initialize
+				$photogrid.masonry({
+				itemSelector: '.item'
+				});
+			});
+		</script>
+	</body>
+
+</html>

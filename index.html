@@ -23,7 +23,8 @@
 	</head>
 
 	<body>
-
+		<div id="prelaoder">
+		</div>
 		<div id="nav">
 			<div class="name" >
 				<span id="first">VIKALP</span>
@@ -32,8 +33,8 @@
 
 			<ul class="links">
 				<!--<li><a href="https://medium.com/@vkalpgupta/" >Thoughts</a></li>-->
-				<li><a href="./projects" >Projects</a></li>
-				<li><a href="./photo.html" >Photography</a></li>
+				<li><a href="./projects/" >Projects</a></li>
+				<li><a href="./photos/" >Photography</a></li>
 			</ul>
 			<ul class="links">
 				<li><a href="./aboutme">About Me</a></li>
@@ -60,6 +61,14 @@
 
 
 		<script type="text/javascript">
+			jQuery(document).ready(function($) {  
+
+			// site preloader -- also uncomment the div in the header and the css style for #preloader
+			$(window).load(function(){
+				$('#preloader').fadeOut('slow',function(){$(this).remove();});
+			});
+
+			});
 			function placeNav(){
 				var secLeft = $('.mainsec').css('marginLeft');
 				secLeft = Number(secLeft.substring(0,secLeft.length - 2))
