@@ -148,6 +148,13 @@ a {
 	color: #666666;
 	line-height: 1.8em;
 }
+#nav div#social img{
+	margin: 5px 5px 0px 0px ;
+}
+
+#nav div#social img {
+	width: 15px;
+}
 
 /*--------------MAIN CONTENT--------------*/
 
@@ -157,7 +164,7 @@ a {
 
 .maindiv p#hi {
 	font-size: 7.2em;
-	line-height: 1;
+	line-height: 0.7;
 	color: #000;
 }
 
