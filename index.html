@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Vikalp Gupta - Designer</title>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="./css/pure-min.css">
+		<!--[if lte IE 8]>
+    <link rel="stylesheet" href="./css/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+<!--<![endif]-->
+		<link rel="stylesheet" href="./css/style.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
+	
+	</head>
+
+	<body>
+
+		<div id="nav">
+			<div class="name" >
+				<span id="first">VIKALP</span>
+				<span id="last">GUPTA</br></span>
+			</div>
+
+			<ul class="links">
+				<!--<li><a href="https://medium.com/@vkalpgupta/" >Thoughts</a></li>-->
+				<li><a href="./projects" >Projects</a></li>
+				<li><a href="./photo.html" >Photography</a></li>
+			</ul>
+			<ul class="links">
+				<li><a href="./aboutme">About Me</a></li>
+			</ul>
+
+			<ul id="social">
+				<li><a href="https://twitter.com/vkalpgupta"><img href="./t.png"></a></li>
+				<li><a href="https://instagram.com/vikalp02"><img href="./i.png"></a></li>
+			</ul>
+		</div>
+
+		<section id="landing" class="pure-g">
+
+			<div class="mainsec pure-u-1-2" >
+				
+				<div class="maindiv" id="intro">
+					<p id="hi">Hey!</p>
+					<p class="text"></br>I'm a designer who is in love with photography </br>&amp reads profusely.</br></br>
+						I solve problems of future through design.</p>
+				</div>
+			</div>
+
+		</section>
+
+
+		<script type="text/javascript">
+			function placeNav(){
+				var secLeft = $('.mainsec').css('marginLeft');
+				secLeft = Number(secLeft.substring(0,secLeft.length - 2))
+				var width = 76;
+				var avlbl = secLeft - width;
+				var gutter = avlbl * 0.25;
+				var navLeft = avlbl * .75;
+				console.log(secLeft, avlbl, gutter, navLeft)
+				$('#nav').css('left', navLeft + 'px')
+			}
+			placeNav()
+			$(window).resize(function(){
+				placeNav()
+			})
+
+			
+		</script>
+	</body>
+
+</html>

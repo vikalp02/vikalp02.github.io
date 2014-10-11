@@ -1,0 +1,46 @@
+body{
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: #444444;
+	-webkit-font-smoothing: antialiased;
+	text-shadow:0 0 1px transparent;
+	margin: 0;
+}
+
+body *::selection{
+	background: rgb(248,144,74);
+	color: rgb(255,255,255);
+
+}
+
+.image-hover {
+filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
+filter: gray;
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-moz-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.image-hover:hover {
+filter: none;
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+}
+
+div#main{
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	line-height: 150%;
+	font-size: 1.5em;
+}
+
+img{
+	margin-bottom: 2%;
+}

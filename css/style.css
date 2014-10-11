@@ -1,0 +1,173 @@
+/*-----------------------CSS RESET----------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--------------CSS MAIN--------------*/
+html {
+	height: 100%;
+
+}
+body {
+	line-height: 1;
+	height: 100%;
+	display: block;
+	color: #222;
+	-webkit-font-smoothing: antialiased;
+	text-shadow:0 0 1px transparent;
+	margin: 0;
+	font-family: Lato, sans-serif;
+	font-size: 10px;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 1380px) {
+	body {
+		font-size: 8px;
+	}
+}
+body *::selection{
+	background: rgb(248,144,74);
+	color: rgb(255,255,255);
+
+}
+
+/*--#landing {
+	min-height: 100%;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+}
+--*/
+
+a {
+	text-decoration: none;
+}
+
+
+
+.mainsec {
+	margin: 0 auto 0 auto;
+	padding-top: 170px;
+	padding-bottom: 50px;
+	font-family: Lato, sans-serif !important;
+	font-weight: 300;
+	display: block;
+}
+
+/*--------------NAV BAR--------------*/
+
+#nav {
+	width: 90px;
+	position: fixed;
+	font-size: 1.6em;
+	color: #666666;
+	font-weight: 400;
+	z-index: 10;
+	top: 170px;
+}
+
+#nav .name {
+	padding-bottom: 5px;
+}
+#nav span#first {
+	font-size: 1.6em;
+	font-weight: 400;
+}
+
+#nav span#last {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+#nav ul.links{
+	margin-top: 20px;
+}
+
+#nav ul.links li a{
+	color: #666666;
+	line-height: 1.8em;
+}
+
+/*--------------MAIN CONTENT--------------*/
+
+.maindiv {
+	display: block;
+}
+
+.maindiv p#hi {
+	font-size: 7.2em;
+	line-height: 1;
+	color: #000;
+}
+
+
+.maindiv p.text {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+/*--------------PHOTO--------------*/
+
+#photogrid {
+	padding-top: 10px;
+}
+
+
+.item {
+	font-size: 0;
+	margin: 2px;
+	max-width: 280px;
+}
+
+#photogrid img {
+	width: 100%;
+}
