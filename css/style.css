@@ -1,5 +1,5 @@
 /*-----------------------CSS RESET----------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -91,7 +91,7 @@ body *::selection{
 
 /*--#landing {
 	min-height: 100%;
-	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	background: url(../images/bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -137,7 +137,7 @@ a {
 
 #nav span#first {
 	font-size: 1.6em;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 #nav span#last {
@@ -195,4 +195,128 @@ a {
 
 #photogrid img {
 	width: 100%;
+}
+
+/*--------------PHOTO--------------*/\
+
+#darkback {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+}
+
+#openimage {
+ 	display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    z-index: 1002;
+    overflow: auto;
+}
+
+/* Lightbox stuff */
+
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 0.4.9 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2014, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all{
+	.featherlight{
+		display:none;
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		z-index:999;
+		text-align:center;
+		white-space:nowrap;
+		cursor:url(../images/cross.png), auto;
+		background:#333;
+		background:rgba(0,0,0,0)
+	}
+	.featherlight:last-of-type{
+		background:rgba(0,0,0,.8)
+	}
+	.featherlight:before{
+		content:'';
+		display:inline-block;
+		height:100%;
+		vertical-align:middle;
+		margin-right:-.25em}
+	.featherlight .featherlight-content{
+		position:relative;
+		text-align:left;
+		vertical-align:middle;
+		display:inline-block;
+		overflow:hidden;
+		/*padding:25px 25px 0;
+		border-bottom:25px solid transparent;*/
+		margin:5%;
+		max-height: 80%;
+		height: 80%;
+		cursor:auto;
+		white-space:normal
+	}
+	.featherlight .featherlight-inner{
+		display:block
+	}
+	/*.featherlight .featherlight-close-icon{
+		position:absolute;
+		z-index:9999;
+		top:0;
+		right:0;
+		line-height:25px;
+		width:25px;
+		cursor:pointer;
+		text-align:center;
+		font-size: 1.5em;
+		font:Arial,sans-serif;
+		background:rgba(0,0,0,1);
+		color:#fff
+	}*/
+/*	.featherlight .featherlight-image{
+		width:100%;
+		height:100%;
+	}
+*/	.featherlight-content{
+		max-height: 80%;
+		height: 80%;	
+	}
+	.featherlight-content img {
+		max-width: 100%;
+		max-height: 100%;
+/*		height: auto;
+		width: auto;
+	    width: auto\9; /* ie8 */*/
+	}
+
+	.featherlight-iframe .featherlight-content{
+		border-bottom:0;
+		padding:0
+	}
+	.featherlight iframe{border:0
+	}
+}
+
+@media only screen and (max-width:1024px){
+	.featherlight .featherlight-content{
+		margin-left:10px;
+		margin-right:10px;
+		max-height:98%;
+		padding:10px 10px 0;
+		border-bottom:10px solid transparent
+	}
 }
