@@ -145,21 +145,106 @@ a {
 	font-weight: 300;
 }
 
-#nav ul.links{
+#nav #navmenu ul.links{
 	margin-top: 20px;
 }
 
-#nav ul.links li a{
+#nav #navmenu ul.links li a{
 	color: #666666;
 	line-height: 1.8em;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
 }
 
-#nav div#social img{
+#nav #navmenu ul.links li a:hover{
+	text-decoration: none;
+	color: #ff6600;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+}
+
+#nav #navmenu ul.links li a:active{
+	text-decoration: none;
+	color: #ff6600;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+}
+
+#nav #navmenu ul.links li a.activelink {
+	text-decoration: none;
+	color: #ff6600;
+	opacity: 0.5;
+}
+
+#nav #navmenu div#social a{
+	color: #666666;
+	line-height: 1.8em;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
 	margin: 5px 5px 0px 0px ;
+	width: 15px;
 }
 
-#nav div#social img {
-	width: 15px;
+#nav #navmenu div#social a:hover{
+	text-decoration: none;
+	color: #ff6600;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+}
+
+#nav #menuicon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+	#nav {
+		position: absolute;
+		top: 10px;
+		height: 100;
+		width: 100%;
+	}
+
+	#nav #menuicon {
+		display: inline-block;
+		position: absolute;
+		right: 10px;
+		top: 8px;
+		font-size: 1.5em;
+
+	}
+
+	#nav .name {
+		left: 10px;
+		width: 90px;
+	}
+
+
+
+	#nav #navmenu {
+		background-color: rgba(255,255,255,0.9);
+		height: 88vh;
+		z-index: 100;
+		text-align: center;
+		top: 50%;
+		display: none;
+	}
+
+	#nav #menuicon:hover {
+	
+	}
+
+
 }
 
 /*--------------MAIN CONTENT--------------*/
