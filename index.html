@@ -122,6 +122,10 @@
 				$('#nav').css('left', navLeft + 'px')
 			}
 			
+			if ($(window).width()>600) {
+					placeNav()
+				}
+
 			$(window).resize(function(){
 				if ($(window).width()>600) {
 					placeNav()

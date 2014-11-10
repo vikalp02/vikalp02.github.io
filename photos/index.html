@@ -145,10 +145,15 @@
 				console.log(secLeft, avlbl, gutter, navLeft)
 				$('#nav').css('left', navLeft + 'px')
 			}
-			placeNav()
+			
+			if ($(window).width()>600) {
+					placeNav()
+				}
+
 			$(window).resize(function(){
 				placeNav()
 			})
+			
 			$(window).load(function(){
 				var $photogrid = $('#photogrid');
 				// initialize
