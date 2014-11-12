@@ -120,7 +120,6 @@ a {
 #nav {
 	width: 90px;
 	position: fixed;
-	font-size: 1.6em;
 	color: #666666;
 	font-weight: 400;
 	z-index: 10;
@@ -136,17 +135,21 @@ a {
 }
 
 #nav span#first {
-	font-size: 1.6em;
+	font-size: 2.4em;
 	font-weight: 600;
 }
 
 #nav span#last {
-	font-size: 1.2em;
+	font-size: 1.6em;
 	font-weight: 300;
 }
 
 #nav #navmenu ul.links{
 	margin-top: 20px;
+}
+
+#nav #navmenu {
+	font-size: 1.5em;
 }
 
 #nav #navmenu ul.links li a{
