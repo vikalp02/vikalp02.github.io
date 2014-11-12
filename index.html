@@ -90,6 +90,9 @@
 
 		<section id="landing" class="pure-g">
 
+			<div class="pure-u-1-4" id="offset">&nbsp
+			</div>
+
 			<div class="mainsec pure-u-1-2" >
 				
 				<div class="maindiv" id="intro">
@@ -116,15 +119,26 @@
 			});
 
 			function placeNav(){
-				var secLeft = $('.mainsec').css('marginLeft');
+				var secLeft = $('.pure-u-1-4').css('width');
 				secLeft = Number(secLeft.substring(0,secLeft.length - 2))
 				var width = 76;
-				var avlbl = secLeft - width;
+				var avlbl = secLeft + 4 - width;
 				var gutter = avlbl * 0.25;
 				var navLeft = avlbl * .75;
 				console.log(secLeft, avlbl, gutter, navLeft)
 				$('#nav').css('left', navLeft + 'px')
 			}
+
+			// function placeNav(){
+			// 	var secLeft = $('.mainsec').css('marginLeft');
+			// 	secLeft = Number(secLeft.substring(0,secLeft.length - 2))
+			// 	var width = 76;
+			// 	var avlbl = secLeft - width;
+			// 	var gutter = avlbl * 0.25;
+			// 	var navLeft = avlbl * .75;
+			// 	console.log(secLeft, avlbl, gutter, navLeft)
+			// 	$('#nav').css('left', navLeft + 'px')
+			// }
 			
 			if ($(window).width()>600) {
 					placeNav()

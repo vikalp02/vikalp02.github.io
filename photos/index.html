@@ -152,7 +152,9 @@
 				}
 
 			$(window).resize(function(){
-				placeNav()
+				if ($(window).width()>600) {
+					placeNav()
+				}	
 			})
 			
 			$(window).load(function(){
