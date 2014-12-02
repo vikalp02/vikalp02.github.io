@@ -69,7 +69,7 @@ body {
 	line-height: 1;
 	height: 100%;
 	display: block;
-	color: #222;
+	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-shadow:0 0 1px transparent;
 	margin: 0;
@@ -107,7 +107,7 @@ a {
 
 
 .mainsec {
-	padding-top: 170px;
+	padding-top: 72px;
 	padding-bottom: 50px;
 	font-family: Lato, sans-serif !important;
 	font-weight: 300;
@@ -115,7 +115,7 @@ a {
 }
 .mainsec a{
 	text-decoration: none;
-	color: #222;
+	color: #666;
 	border-bottom: 1px solid #ccc;
 }
 .mainsec a:hover{
@@ -132,10 +132,10 @@ a {
 #nav {
 	width: 90px;
 	position: fixed;
-	color: #666666;
+	color: #666;
 	font-weight: 400;
 	z-index: 10;
-	top: 170px;
+	top: 72px;
 }
 
 #nav .name {
@@ -143,7 +143,7 @@ a {
 }
 
 #nav .name a{
-	color: #666666;
+	color: #666;
 }
 
 #nav span#first {
@@ -165,7 +165,7 @@ a {
 }
 
 #nav #navmenu ul.links li a{
-	color: #666666;
+	color: #666;
 	line-height: 1.8em;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
@@ -198,7 +198,7 @@ a {
 }
 
 #nav #navmenu div#social a{
-	color: #666666;
+	color: #666;
 	line-height: 1.8em;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
@@ -283,7 +283,7 @@ a {
 }
 
 
-.item {
+#photogrid .item {
 	font-size: 0;
 	margin: 1px;
 	max-width: 230px;
@@ -296,7 +296,7 @@ a {
 
 
 #photogrid img {
-	width: 100%;
+	max-width: 100%;
 }
 
 #photogrid img:hover {
@@ -306,31 +306,7 @@ a {
     -moz-transition: all 0.2s ease-in 0s;
     -webkit-transition: all 0.2s ease-in 0s;
 }
-
-#darkback {
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1001;
-    -moz-opacity: 0.8;
-    opacity: .80;
-    filter: alpha(opacity=80);
-}
-
-#openimage {
- 	display: none;
-    position: absolute;
-    margin: 0 auto;
-    width: 50%;
-    height: 50%;
-    z-index: 1002;
-    overflow: auto;
-}
-
+	
 /* Lightbox stuff */
 
 /**
@@ -427,4 +403,46 @@ a {
 		padding:10px 10px 0;
 		border-bottom:10px solid transparent
 	}
+}
+
+
+/*--------------PROJECT--------------*/
+
+#projectgrid a .item {
+	margin: 0px 10px 10px 10px;
+	max-width: 300px;
+	height: 240px;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+}
+
+#projectgrid img {
+	background-color: #f60;
+	max-width: 100%;
+	margin-bottom: 10px
+}
+
+#projectgrid img:hover {
+	opacity: 0.85;
+	transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all 0.2s ease-in 0s;
+}
+
+#projectgrid .item .projectdetail {
+	position: relative;
+}
+
+#projectgrid .item .projecthead {
+	font-size: 2em;
+}
+
+#projectgrid .item .tags {
+	font-size: 1.2em;
+	line-height: 1.7em;
+	font-weight: 400;
+	color: #aaa;
 }
