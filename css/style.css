@@ -84,8 +84,8 @@ body {
 	}
 }
 body *::selection{
-	background: rgb(248,144,74);
-	color: rgb(255,255,255);
+	background: #ff4b33;
+	color: #fff;
 
 }
 
@@ -116,11 +116,11 @@ a {
 .mainsec a{
 	text-decoration: none;
 	color: #666;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #999;
 }
 .mainsec a:hover{
 	text-decoration: none;
-	color: #f60;
+	color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -175,7 +175,7 @@ a {
 
 #nav #navmenu ul.links li a:hover{
 	text-decoration: none;
-	color: #ff6600;
+	color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -184,7 +184,7 @@ a {
 
 #nav #navmenu ul.links li a:active{
 	text-decoration: none;
-	color: #ff6600;
+	color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -193,7 +193,7 @@ a {
 
 #nav #navmenu ul.links li a.activelink {
 	text-decoration: none;
-	color: #ff6600;
+	color: #ff4b33;
 	opacity: 0.5;
 }
 
@@ -210,7 +210,7 @@ a {
 
 #nav #navmenu div#social a:hover{
 	text-decoration: none;
-	color: #ff6600;
+	color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -287,7 +287,7 @@ a {
 	font-size: 0;
 	margin: 1px;
 	max-width: 230px;
-	background-color: #ff6600;
+	background-color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -449,6 +449,10 @@ a {
 
 
 /*--------------ABOUT--------------*/
+
+#aboutme {
+	margin-top: -52px;
+}
 
 #aboutme img {
 	max-width: 1200px;
