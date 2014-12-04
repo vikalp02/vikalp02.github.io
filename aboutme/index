@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Vikalp Gupta - UX Designer</title>
+
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta name="author" content="Vikalp Gupta">
+        <meta name="keywords" content="designer, vikalp02, vikalp, Vikalp Gupta, sdslabs, ux designer, ui designer, iit roorkee, vik02uee">
+		        
+        <meta name="description" content="Portfolio of Vikalp Gupta, UX designer, student at IIT Roorkee">
+		        
+        <link rel="alternate" type="application/rss+xml" title="Vikalp Gupta" href="http://vikalpgupta.com/feed.xml">
+        <!--Open Graph Related Stuff-->
+        <meta property="og:title" content="">
+        <meta property="og:url" content="http://vikalpgupta.com/index.html">
+        <meta property="og:site_name" content="vikalpgupta.com">
+        <meta property="og:image" content="http://vikalpgupta.com/images/avatar.jpg">
+        	
+        <!--Twitter Card Stuff-->
+        <meta name="twitter:card" content="summary_large_image">    
+        <meta name="twitter:title" content="Vikalp Gupta">
+		<meta name="twitter:image" content="http://vikalpgupta.com/images/avatar.jpg">
+		<meta name="twitter:creator" content="@vkalpgupta">
+        <meta name="twitter:site" content="@vkalpgupta">
+        <meta name="twitter:url" content="http://vikalpgupta.com/index.html">
+		<meta name="twitter:description" content="Portfolio of Vikalp Gupta, UX designer, student at IIT Roorkee">
+
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.jpg">
+        <link rel="shortcut icon" href="/images/favicon.png">
+
+        <!--Authorship-->
+        <link rel="me" href="//plus.google.com/+VikalpGupta">
+        <link rel="me" href="//facebook.com/vikalp02">
+
+		<link rel="stylesheet" href="./css/pure-min.css">
+		<!--[if lte IE 8]>
+    <link rel="stylesheet" href="./css/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+<!--<![endif]-->
+		<link rel="stylesheet" href="./font-awesome-4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
+	
+	</head>
+
+	<body>
+		<div id="prelaoder">
+		</div>
+		<div id="nav">
+
+			<div id="menuicon">
+				<a ><i class="fa fa-bars"></i></a>
+			</div>
+
+			<div class="name">
+				<a href="/">
+				<span id="first">VIKALP</span>
+				<span id="last">GUPTA<br></span>
+			</a>
+			</div>
+
+			<div id="navmenu">
+				<ul class="links">
+					<!--<li><a href="https://medium.com/@vkalpgupta/" >Thoughts</a></li>-->
+					<li><a href="./projects/" >Projects</a></li>
+					<li><a href="./photos/" >Photography</a></li>
+				</ul>
+				<ul class="links">
+					<li><a href="./aboutme">About Me</a></li>
+				</ul>
+
+				<div id="social">
+					<a target="_blank" href="https://twitter.com/vkalpgupta"><i class="fa fa-twitter"></i></a>
+					<a target="_blank" href="https://behance.net/vikalp02"><i class="fa fa-behance"></i></a>
+					<a target="_blank" href="https://plus.google.com/+VikalpGupta"><i class="fa fa-google-plus"></i></a>
+					<a target="_blank" href="https://instagram.com/vikalp02"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+
+		</div>
+
+		<section id="landing" class="pure-g">
+
+			<div class="pure-u-1-4" id="offset">&nbsp
+			</div>
+
+			<div class="mainsec pure-u-1-2" >
+				
+				<div class="maindiv" id="aboutme">
+
+					<img src="./me.jpg">
+					<p class="text"><br>I’m Vikalp Gupta,a final year Electrical undergraduate at IIT Roorkee, who experiments with design mostly creating new experiences for all.<br>
+						My interest lies in Human Computer Interaction majorly in User experience, User Interaction and Digital image Processing. I'm a member of <a href="https://sdslabs.co">SDSLabs</a>, an awesome group of students constantly striving to innovate and foster technical activities at IIT Roorkee. I started my journey as a designer in <a href="http://gg.ieeeiitr.com">Geek Gazette</a>, official technical magazine of IIT Roorkee.<br><br> 
+						Get in touch<br>
+						<a href="mailto:me%40vikalpgupta.com" class="email">me@vikalpgupta.com</a>
+					</p>
+				</div>
+			</div>
+
+		</section>
+
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {  
+
+			// site preloader -- also uncomment the div in the header and the css style for #preloader
+			$(window).load(function(){
+				$('#preloader').fadeOut('slow',function(){$(this).remove();});
+			});
+
+			});
+
+			function placeNav(){
+				var secLeft = $('.pure-u-1-4').css('width');
+				secLeft = Number(secLeft.substring(0,secLeft.length - 2))
+				var width = 76;
+				var avlbl = secLeft + 4 - width;
+				var gutter = avlbl * 0.25;
+				var navLeft = avlbl * .75;
+				console.log(secLeft, avlbl, gutter, navLeft)
+				$('#nav').css('left', navLeft + 'px')
+			}
+
+			// function placeNav(){
+			// 	var secLeft = $('.mainsec').css('marginLeft');
+			// 	secLeft = Number(secLeft.substring(0,secLeft.length - 2))
+			// 	var width = 76;
+			// 	var avlbl = secLeft - width;
+			// 	var gutter = avlbl * 0.25;
+			// 	var navLeft = avlbl * .75;
+			// 	console.log(secLeft, avlbl, gutter, navLeft)
+			// 	$('#nav').css('left', navLeft + 'px')
+			// }
+			
+			if ($(window).width()>600) {
+					placeNav()
+				}
+
+			$(window).resize(function(){
+				if ($(window).width()>600) {
+					placeNav()
+				}	
+			})
+
+			jQuery(document).ready(function() {
+				jQuery("#menuicon").click(function() {
+					jQuery("#navmenu").slideToggle();
+				});
+			});
+
+
+			
+		</script>
+	</body>
+
+</html>

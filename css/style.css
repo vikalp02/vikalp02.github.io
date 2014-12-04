@@ -446,3 +446,17 @@ a {
 	font-weight: 400;
 	color: #aaa;
 }
+
+
+/*--------------ABOUT--------------*/
+
+#aboutme img {
+	max-width: 1200px;
+	width: 100%;
+}
+
+#aboutme p {
+	font-size: 1.8em;
+	line-height: 1.4em;
+	font-weight: 400;
+}
