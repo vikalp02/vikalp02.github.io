@@ -69,7 +69,7 @@ body {
 	line-height: 1;
 	height: 100%;
 	display: block;
-	color: #666;
+	color: #444;
 	-webkit-font-smoothing: antialiased;
 	text-shadow:0 0 1px transparent;
 	margin: 0;
@@ -83,6 +83,7 @@ body {
 		font-size: 7.5px;
 	}
 }
+
 body *::selection{
 	background: #ff4b33;
 	color: #fff;
@@ -104,7 +105,16 @@ a {
 	text-decoration: none;
 }
 
-
+#bgimg {
+	background: linear-gradient(
+      rgba(255,255,255,0.8), 
+      rgba(255,255,255,0.8)
+    ), url(../aboutme/me.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
 
 .mainsec {
 	padding-top: 72px;
@@ -115,7 +125,7 @@ a {
 }
 .mainsec a{
 	text-decoration: none;
-	color: #666;
+	color: #444;
 	border-bottom: 1px solid #999;
 }
 .mainsec a:hover{
@@ -132,7 +142,7 @@ a {
 #nav {
 	width: 90px;
 	position: fixed;
-	color: #666;
+	color: #444;
 	font-weight: 400;
 	z-index: 10;
 	top: 72px;
@@ -143,7 +153,7 @@ a {
 }
 
 #nav .name a{
-	color: #666;
+	color: #444;
 }
 
 #nav span#first {
@@ -157,16 +167,21 @@ a {
 }
 
 #nav #navmenu ul.links{
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 #nav #navmenu {
 	font-size: 1.5em;
 }
 
+#nav #navmenu ul.links li {
+	display: block;
+}
 #nav #navmenu ul.links li a{
-	color: #666;
-	line-height: 1.8em;
+	display: block;
+	color: #444;
+	line-height: 2em;
+	height: 2em;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -197,9 +212,21 @@ a {
 	opacity: 0.5;
 }
 
-#nav #navmenu div#social a{
-	color: #666;
-	line-height: 1.8em;
+#nav #navmenu ul.links #projnav {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#nav #navmenu ul.links #projnav li{
+	margin-top: -5px;
+	margin-left: 20px;
+}
+
+#nav #navmenu ul li#social a{
+	color: #444;
+	display: inline-block;
+	line-height: 2em;
+	height: 2em;
 	transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
@@ -208,7 +235,7 @@ a {
 	width: 15px;
 }
 
-#nav #navmenu div#social a:hover{
+#nav #navmenu ul li#social a:hover{
 	text-decoration: none;
 	color: #ff4b33;
 	transition: all 0.2s ease-in 0s;
@@ -265,15 +292,17 @@ a {
 }
 
 .maindiv p#hi {
-	font-size: 4.8em;
-	line-height: 0.7;
+	font-size: 4em;
+	line-height: 0.7em;
+	margin-bottom: 0.5em;
 	color: #000;
 }
 
 
-.maindiv p.text {
-	font-size: 2.4em;
-	line-height: 1.1;
+.maindiv p.introtext {
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-top: 0.5em;
 }
 
 /*--------------PHOTO--------------*/
@@ -447,7 +476,9 @@ a {
 	color: #aaa;
 }
 
-
+#projects img{
+	margin: 0 auto;
+}
 /*--------------ABOUT--------------*/
 
 #aboutme {
@@ -461,6 +492,6 @@ a {
 
 #aboutme p {
 	font-size: 1.6em;
-	line-height: 1.4em;
+	line-height: 2em;
 	font-weight: 400;
 }

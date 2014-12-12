@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>About Me - Vikalp Gupta - UX Designer</title>
+		<title>Vikalp Gupta - UX Designer</title>
 
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,18 @@
 
         <meta name="author" content="Vikalp Gupta">
         <meta name="keywords" content="designer, vikalp02, vikalp, Vikalp Gupta, sdslabs, ux designer, ui designer, iit roorkee, vik02uee">
-		        
+
         <meta name="description" content="Portfolio of Vikalp Gupta, UX designer, student at IIT Roorkee">
-		        
+
         <link rel="alternate" type="application/rss+xml" title="Vikalp Gupta" href="http://vikalpgupta.com/feed.xml">
         <!--Open Graph Related Stuff-->
         <meta property="og:title" content="">
         <meta property="og:url" content="http://vikalpgupta.com/index.html">
         <meta property="og:site_name" content="vikalpgupta.com">
         <meta property="og:image" content="http://vikalpgupta.com/images/avatar.jpg">
-        	
+
         <!--Twitter Card Stuff-->
-        <meta name="twitter:card" content="summary_large_image">    
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Vikalp Gupta">
 		<meta name="twitter:image" content="http://vikalpgupta.com/images/avatar.jpg">
 		<meta name="twitter:creator" content="@vkalpgupta">
@@ -28,8 +28,8 @@
         <meta name="twitter:url" content="http://vikalpgupta.com/index.html">
 		<meta name="twitter:description" content="Portfolio of Vikalp Gupta, UX designer, student at IIT Roorkee">
 
-        <link rel="apple-touch-icon" href="../images/apple-touch-icon.jpg">
-        <link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.jpg">
+        <link rel="shortcut icon" href="/images/favicon.ico">
 
         <!--Authorship-->
         <link rel="me" href="//plus.google.com/+VikalpGupta">
@@ -42,26 +42,21 @@
 <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="../css/grids-responsive-min.css">
 <!--<![endif]-->
+	
 		<link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../css/style.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-		
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
-	
 	</head>
 
 	<body>
-		<div id="prelaoder">
+
+		<div id="preloader">
 		</div>
 		<div id="nav">
-
-			<div id="menuicon">
-				<a ><i class="fa fa-bars"></i></a>
-			</div>
-
-			<div class="name">
+			<div class="name" >
 				<a href="../">
 				<span id="first">VIKALP</span>
 				<span id="last">GUPTA<br></span>
@@ -71,11 +66,15 @@
 			<div id="navmenu">
 				<ul class="links">
 					<!--<li><a href="https://medium.com/@vkalpgupta/" >Thoughts</a></li>-->
-					<li><a href="../projects/" >Projects</a></li>
+					<li><a href="./index.html" >Projects</a></li>
+					<ul id="projnav">
+						<li><a class="activelink" href="/" >Backdoor</a></li>
+						<li><a href="/" >Razorpay</a></li>
+					</ul>
 					<li><a href="../photos/" >Photography</a></li>
 				</ul>
 				<ul class="links">
-					<li><a class="activelink" href="/">About Me</a></li>
+					<li><a href="../aboutme">About Me</a></li>
 					<li id="social">
 						<a target="_blank" href="https://twitter.com/vkalpgupta"><i class="fa fa-twitter"></i></a>
 						<a target="_blank" href="https://behance.net/vikalp02"><i class="fa fa-behance"></i></a>
@@ -84,38 +83,39 @@
 					</li>
 				</ul>
 			</div>
-
+			
 		</div>
 
-		<section id="landing" class="pure-g">
+		<section id="projects" class="pure-g">
 
 			<div class="pure-u-1-4" id="offset">&nbsp
 			</div>
-
-			<div class="mainsec pure-u-1-2" >
-				
-				<div class="maindiv" id="aboutme">
-
-					<img src="./me.jpg">
-					<p class="text"><br>Hi! I’m Vikalp Gupta, a final year Electrical undergraduate at IIT Roorkee, who experiments with design mostly creating new experiences for all. My interest lies in Human Computer Interaction majorly in User experience and User Interaction.<br><br>
-						I interned at <a target="_blank" href="http://razorpay.com">Razorpay</a> in UX/UI Design during the summer of 2014.
-						I'm a member of <a target="_blank" href="https://sdslabs.co">SDSLabs</a>, an awesome group of students constantly striving to innovate and foster technical activities at IIT Roorkee. I started my journey as a designer of <a target="_blank" href="http://gg.ieeeiitr.com">Geek Gazette</a>, official technical magazine of IIT Roorkee.<br><br> 
-						Get in touch<br>
-						<a href="mailto:me%40vikalpgupta.com" class="email">me@vikalpgupta.com</a>
-					</p>
+			
+			<div class="mainsec pure-u-1-2">
+				<div id="projects">
+					<img src="bckdrp.jpg">
 				</div>
+
+				
 			</div>
 
-		</section>
+		</section><!--
+
+		<section class="mainsec">
+			<div id="openimage" style="background-image: url(./bells-big.jpg); display: none;"></div>
+			<div id="darkback" style="display: none;" onclick="lightbox_close();"></div>
+
+		</section> -->
 
 
 		<script type="text/javascript">
-			jQuery(document).ready(function($) {  
-
-			// site preloader -- also uncomment the div in the header and the css style for #preloader
+			jQuery(document).ready(function($) {
 			$(window).load(function(){
 				$('#preloader').fadeOut('slow',function(){$(this).remove();});
 			});
+
+			// site preloader -- also uncomment the div in the header and the css style for #preloader
+
 
 			});
 
@@ -151,14 +151,16 @@
 				}	
 			})
 
-			jQuery(document).ready(function() {
-				jQuery("#menuicon").click(function() {
-					jQuery("#navmenu").slideToggle();
+
+			//lightbox functions
+
+			$(document).ready(function() {
+				$(".fancybox").fancybox({
+					openEffect	: 'none',
+					closeEffect	: 'none'
 				});
 			});
 
-
-			
 		</script>
 	</body>
 
