@@ -69,7 +69,7 @@ body {
 	line-height: 1;
 	height: 100%;
 	display: block;
-	color: #444;
+	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-shadow:0 0 1px transparent;
 	margin: 0;
@@ -128,20 +128,21 @@ a {
 }
 .mainsec a{
 	text-decoration: none;
-	color: #444;
+	color: #666;
+	padding-bottom: 2px;
 	border-bottom: 1px solid #999;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 .mainsec a:hover{
 	text-decoration: none;
 	color: #ff4b33;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 /*--------------NAV BAR--------------*/
@@ -149,7 +150,6 @@ a {
 #nav {
 	width: 90px;
 	position: fixed;
-	color: #444;
 	font-weight: 400;
 	z-index: 10;
 	top: 72px;
@@ -177,40 +177,42 @@ a {
 	margin-top: 15px;
 }
 
+
 #nav #navmenu {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 #nav #navmenu ul.links li {
 	display: block;
 }
+
 #nav #navmenu ul.links li a{
 	display: block;
 	color: #444;
 	line-height: 2em;
 	height: 2em;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #nav #navmenu ul.links li a:hover{
 	text-decoration: none;
 	color: #ff4b33;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #nav #navmenu ul.links li a:active{
 	text-decoration: none;
 	color: #ff4b33;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #nav #navmenu ul.links li a.activelink {
@@ -229,15 +231,35 @@ a {
 	margin-left: 20px;
 }
 
+#nav #navmenu ul#personallinks li a{
+	display: block;
+	color: #666;
+	line-height: 2em;
+	height: 2em;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+}
+
+#nav #navmenu ul#personallinks li a:hover{
+	text-decoration: none;
+	color: #ff4b33;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+}
+
 #nav #navmenu ul li#social a{
-	color: #444;
+	color: #666;
 	display: inline-block;
 	line-height: 2em;
 	height: 2em;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 	margin: 5px 5px 0px 0px ;
 	width: 15px;
 }
@@ -245,10 +267,10 @@ a {
 #nav #navmenu ul li#social a:hover{
 	text-decoration: none;
 	color: #ff4b33;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #nav #menuicon {
@@ -299,17 +321,16 @@ a {
 }
 
 .maindiv p#hi {
-	font-size: 4em;
+	font-size: 3.2em;
 	line-height: 0.7em;
 	margin-bottom: 0.5em;
-	color: #000;
 }
 
 
 .maindiv p.introtext {
 	font-size: 2em;
 	line-height: 1.5em;
-	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 /*--------------PHOTO--------------*/
@@ -324,10 +345,10 @@ a {
 	margin: 1px;
 	max-width: 230px;
 	background-color: #ff4b33;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 
@@ -337,10 +358,10 @@ a {
 
 #photogrid img:hover {
 	opacity: 0.85;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 	
 /* Lightbox stuff */
@@ -448,10 +469,10 @@ a {
 	margin: 0px 10px 10px 10px;
 	max-width: 300px;
 	height: 240px;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #projectgrid img {
@@ -462,10 +483,10 @@ a {
 
 #projectgrid img:hover {
 	opacity: 0.85;
-	transition: all 0.2s ease-in 0.1s;
-    -o-transition: all 0.2s ease-in 0.1s;
-    -moz-transition: all 0.2s ease-in 0.1s;
-    -webkit-transition: all 0.2s ease-in 0.1s;
+	transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
 }
 
 #projectgrid .item .projectdetail {
@@ -496,10 +517,12 @@ a {
 #aboutme img {
 	max-width: 1200px;
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 #aboutme p {
 	font-size: 1.6em;
 	line-height: 2em;
 	font-weight: 400;
+	margin-bottom: 1em;
 }
